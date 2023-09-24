@@ -35,7 +35,34 @@ module.exports = () => {
           },
         ],
       }),
-// TODO: Add CSS loaders and babel to webpack.
+      // InjectManifest for Workbox service worker
+      new InjectManifest({
+        swSrc: './src-sw.js', // Path to your service worker file
+        swDest: 'src-sw.js', // Output service worker filename
+      }),
+    ],
+
+    module: {
+      rules: [
+        // Add CSS loaders and Babel configuration here as needed.
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+            },
+          },
+        },
+      ],
+    },
+  };
+};
 
 module.exports = () => {
   return {
