@@ -68,7 +68,7 @@ Optional Installation (PWA):
 For a more convenient experience, you have the option to install the application as a Progressive Web App (PWA) on your device.
 
 ## Deployed Application Link:
-[Deployed Application Link](...)
+[Deployed Application Link](https://texteditorfunk-00e14ef28b5e.herokuapp.com/)
 
 ## GitHub Repository:
 [GitHub Repository](https://github.com/4FunkE/progressive-editor-funk19)
