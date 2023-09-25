@@ -2,16 +2,22 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+### Project Overview:
+The project aims to develop a web-based text editor that operates within a web browser, offering users a convenient and accessible platform for creating and editing text content. This text editor will adhere to Progressive Web App (PWA) standards, providing an enhanced user experience, including offline functionality and data persistence.
 
-build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+### Motivation:
+- The motivation behind this project is to provide users with a downloadable text editor that they can use on their own devices. This enables users to have a reliable and feature-rich text editing tool accessible without the need for installation from an app store or software download.
 
-I start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called idb, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+### Project Objectives:
+- PWA Compliance: The project's primary goal is to meet the criteria for Progressive Web Apps, ensuring that users can seamlessly interact with the text editor in their web browsers, even in offline environments.
+- Data Persistence: To enhance reliability, the application will employ various data persistence techniques, including IndexedDB, to store and retrieve user data.
+- Offline Functionality: Users will be able to use the text editor even when they are not connected to the internet.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+### What the Project Solves:
+- This project addresses the need for a lightweight, browser-based text editor that users can download and use on their devices without the traditional installation process. It simplifies the user experience and allows for offline access to text editing capabilities.
+
+### Key Learning Outcomes:
+- Throughout the project, I will gain valuable insights and skills related to web application development, including PWA implementation, data storage with IndexedDB, and offline functionality. The project will provide hands-on experience in creating a downloadable web application.
 
 ## Table of Contents
 
@@ -20,7 +26,6 @@ I start with an existing application and implement methods for getting and stori
 - [Deployed Application Link](#deployed-application-link)
 - [GitHub Repository](#github-repository)
 - [Screenshot](#screenshot)
-- [Built With](#built-with)
 - [Credits](#credits)
 - [License](#license)
 - [Badges](#badges)
@@ -30,11 +35,9 @@ I start with an existing application and implement methods for getting and stori
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
 1. **Clone the Repository from GitHub:** Alternatively, you can download the ZIP folder from the repository's GitHub page.
 ```bash
-git clone https://github.com/4funke/Employees-of-funk.co.git
+git clone https://github.com/4funke/progressive-editor-funk19.git
 ```
 2. **Open the Repository in a Source Code Editor:**
 Open your preferred source code editor (e.g., Visual Studio Code, Sublime Text) and navigate to the cloned repository's directory.
@@ -45,58 +48,35 @@ Open your preferred source code editor (e.g., Visual Studio Code, Sublime Text) 
 
 ## Usage Instruction: 
 #### Follow these steps to effectively utilize our application:
-Provide instructions and examples for use.
+Access the Application:
+- Open a web browser on your device (e.g., Chrome, Firefox, Safari).
+Navigate to the URL where the text editor application is hosted.
 
-1. Visit the deployed application's homepage and login or sign up for an account.
-2. Choose a teacher from the dropdown menu and rate them using the apple scale.
-3. Write a comment about the teacher's performance.
-4. Click the "Post" button to submit your comment and rating.
-5. To review your contributions, click on "Profile." Don't forget to log out when you're done!
+Home Page:
+- Upon accessing the application, you will be directed to the home page. Here, you can start using the text editor.
+- If you lose internet connectivity or intentionally switch to offline mode, you can continue to work on your documents. The application operates offline thanks to its Progressive Web App (PWA) capabilities.
+Data Persistence:
 
-By following these steps, you'll be seamlessly...
+Download Documents:
+- If you want to download a document to your local device, select the document and use the "Download" option from the menu.
+
+Exit and Return:
+- When you're finished using the application, you can simply close the browser or navigate away from the application's URL.
+- When you return to the application's URL later, your previously saved documents will still be available.
+Optional Installation (PWA):
+
+For a more convenient experience, you have the option to install the application as a Progressive Web App (PWA) on your device.
 
 ## Deployed Application Link:
 [Deployed Application Link](...)
 
 ## GitHub Repository:
-[GitHub Repository](...)
+[GitHub Repository](https://github.com/4FunkE/progressive-editor-funk19)
 
 ## Screenshot
-![image](./public/image/Student-mark-image.png)
-
-## Built With:
-This project was developed using the following technologies and tools:
-- [JSON](https://www.npmjs.com/package/json)
-- [Node.js](https://nodejs.org/en/blog/release/v16.18.1/)
-- [Dotenv](https://www.npmjs.com/package/dotenv)
-- [Express](https://www.npmjs.com/package/express)
-- [Node MySql2](https://www.npmjs.com/package/mysql2)
-- [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Bcrypt](https://www.npmjs.com/package/bcrypt)
-- [Sequelize](https://www.npmjs.com/package/connect-session-sequelize)
-- [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
-- [Express-Session](https://www.npmjs.com/package/express-session)
-### Technologies and Tools Overview
-- JSON: Used for data representation and exchange.
-- Node.js: The runtime environment for executing JavaScript code on the server.
-- Dotenv:  Enables the usage of environment variables to manage configuration.
-- Express: A fast and minimal web application framework for Node.js.
-- Node MySql2: A MySQL driver for Node.js.
-- Inquirer: Facilitates user interactions in the command-line interface.
-- Visual Studio Code: The integrated development environment used for coding.
-- Sequelize: Connect Session Store
-- Bcrypt:
-- Express Handlebars:
-- Express-session:
+![image](./develop/client/src/images/Screenshot%202023-09-25%20094537.png)
 
 ## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
 
 Collaborators: 
 - AskBCS Learning Assistants
@@ -108,27 +88,9 @@ Collaborators:
 
 This application is covered under the MIT license. [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
-
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here. Communicate the capabilities of your project. Here's a guide you can use to structure your features section:
-
-- **Feature Name:** 
-  - Description: A brief description of what this feature accomplishes.
-  - Usage Instructions: How users can interact with this feature.
-  - Example (if applicable): A simple example of how the feature works.
-- **Feature Name:** 
-  - Description: A brief description of what this feature accomplishes.
-  - Usage Instructions: How users can interact with this feature.
-  - Example (if applicable): A simple example of how the feature works.
 
 ## How to Contribute
 
@@ -141,7 +103,7 @@ To contribute to our project, follow these steps:
 1. Fork the Repository: Fork our repository to your own GitHub account by clicking the "Fork" button.
 2. Clone the Repository: Clone the forked repository to your local machine using:
 ```bash
-git clone https://github.com/4funke/Employees-of-funk.co.git 
+git clone https://github.com/4funke/progressive-editor-funk19.git
 ```
 3. Create a New Branch: Create a new branch to work on your contribution using:
 ```bash
@@ -165,19 +127,7 @@ By following these steps, you contribute to the growth and enhancement of our pr
 If you're unsure about where to start or need assistance at any point, feel free to reach out. Together, we can make our project even better!
 
 ## Tests
-
-We have implemented a comprehensive testing suite to ensure the stability and functionality of our application. Our testing includes unit tests, integration tests, and end-to-end tests to cover various scenarios. To run the tests, follow these steps:
-
-1. Ensure you have all dependencies installed by running:
-```bash
-npm i 
-```
-2. Run the tests using the following command:
-```bash
-npm test 
-```
-
-Our testing suite provides confidence in the quality of our code and ensures that any changes made to the codebase don't introduce regressions.
+n/a
 
 ## Questions
 If you have any questions or need further assistance, feel free to reach out. You can contact me through my [GitHub profile](https://github.com/4FunkE) or via email at 4funkecodes@gmail.com. I'm here to help and support you in any way I can. Have a funke day!
