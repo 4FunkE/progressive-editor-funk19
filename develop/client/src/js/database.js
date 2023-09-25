@@ -27,7 +27,7 @@ export const putDb = async (content) => {
 };
 
 // Gets all the content from the database
-const getAllDb = async () => {
+export const getDb = async () => {
   console.log('GET all from the database');
   const jateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readonly');
@@ -39,5 +39,3 @@ const getAllDb = async () => {
 };
 
 initdb(); // Initialize the database when your application starts
-
-export { putDb, getAllDb };
